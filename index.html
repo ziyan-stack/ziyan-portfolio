@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ziyan TV — Web Developer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #f0f4ff);
+      color: #111;
+    }
+    header {
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: white;
+      padding: 100px 30px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3.2rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    header p {
+      font-size: 1.3rem;
+      opacity: 0.8;
+    }
+
+    nav {
+      background: white;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #1e3a8a;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .project-card {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    .quote-section {
+      background: #f8fafc;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .quote {
+      font-size: 1.4rem;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    .quote-author {
+      font-weight: bold;
+      color: #334155;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #1e3a8a;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: #e2e8f0;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ziyan TV</h1>
+    <p>Premium Web Developer for Elegant Websites</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#quote">Quote</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="intro">
+      <h2>About Me</h2>
+      <p>
+        I’m Ziyan, a high-end web developer focused on clean design, speed, and user experience. I build websites that look elegant and work flawlessly.
+        Whether you need a stylish portfolio, an online store, or a landing page — I make it happen with detail and passion.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 style="text-align:center; color:#1e3a8a;">Featured Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Luxury Pet Shop</h3>
+        <p>A sleek, responsive store for pet lovers. Clean UI + modern layout.</p>
+      </div>
+      <div class="project-card">
+        <h3>Elegant Portfolio</h3>
+        <p>This portfolio site you're viewing now — HTML-only, handcrafted design.</p>
+      </div>
+      <div class="project-card">
+        <h3>Startup Landing Page</h3>
+        <p>High-conversion one-page layout with premium typography and UX.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="quote" class="quote-section">
+    <div class="quote">“Design is not just what it looks like and feels like. Design is how it works.”</div>
+    <div class="quote-author">– Steve Jobs</div>
+
+    <div class="quote" style="margin-top: 30px;">“First, solve the problem. Then, write the code.”</div>
+    <div class="quote-author">– John Johnson</div>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align:center; color:#1e3a8a;">Let’s Work Together</h2>
+    <div class="contact">
+      <p>Get in touch with me on Instagram or email. I usually respond within a few hours.</p>
+      <a href="https://instagram.com/ziyan_tv" target="_blank">📸 Instagram</a>
+      <a href="mailto:mailtoziyantv@gmail.com">📧 Email Me</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ziyan TV. Designed with care and code 💻.
+  </footer>
+
+</body>
+</html>
